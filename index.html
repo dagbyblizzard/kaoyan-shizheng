@@ -39,6 +39,15 @@ th{background:var(--soft);font-weight:600}
 code{background:var(--soft);padding:1px 4px;border-radius:3px;font-size:14px}
 footer{color:var(--muted);font-size:12.5px;text-align:center;margin-top:26px}
 .top-link{position:fixed;right:14px;bottom:18px;background:var(--accent);color:#fff;text-decoration:none;border-radius:50%;width:44px;height:44px;line-height:44px;text-align:center;font-size:18px;box-shadow:0 3px 10px rgba(0,0,0,.25);opacity:.9}
+@media (max-width:640px){
+table{display:block;border:0;margin:8px 0}
+thead{display:none}
+tbody{display:block}
+tr{display:block;border:1px solid var(--line);border-radius:10px;margin:9px 0;padding:6px 8px;background:var(--soft)}
+td{display:block;border:0;padding:3px 0;font-size:15.5px;line-height:1.7;word-break:break-word}
+td:before{content:attr(data-label);display:inline-block;min-width:4.2em;color:var(--muted);font-size:12.5px;margin-right:6px;vertical-align:top}
+td:empty{display:none}
+}
 @media print{nav.days,.top-link{display:none}body{background:#fff}article.day{box-shadow:none;border:0;padding:0}main{max-width:none}}
 </style></head>
 <body><main>
@@ -51,21 +60,21 @@ footer{color:var(--muted);font-size:12.5px;text-align:center;margin-top:26px}
 <table><thead><tr>
 <th>#</th><th>条目</th><th>类型</th><th>板块</th><th>核心考点</th>
 </tr></thead><tbody>
-<tr><td>1</td><td>APEC第三十三次领导人非正式会议（深圳）</td><td>当日</td><td>当代·外交</td><td>主题、"四梁八柱"、"深圳展望"</td></tr>
-<tr><td>2</td><td>中俄美元首会晤与《和平宣言》</td><td>当日</td><td>当代·史纲</td><td>首次三方、四点看法、中美新定位</td></tr>
-<tr><td>3</td><td>老龄工作重要指示与全国老龄工作会议</td><td>当日</td><td>毛中特·民生</td><td>"四个协同"、银发经济、矛盾特殊性</td></tr>
-<tr><td>4</td><td>2026年全国两会与"十五五"规划纲要</td><td>年度</td><td>毛中特·经济</td><td>4.5%—5%、20项指标、"投资于人"</td></tr>
-<tr><td>5</td><td>2026年中央一号文件</td><td>年度</td><td>毛中特·三农</td><td>农业农村现代化、农业新质生产力</td></tr>
+<tr><td data-label="#">1</td><td data-label="条目">APEC第三十三次领导人非正式会议（深圳）</td><td data-label="类型">当日</td><td data-label="板块">当代·外交</td><td data-label="核心考点">主题、"四梁八柱"、"深圳展望"</td></tr>
+<tr><td data-label="#">2</td><td data-label="条目">中俄美元首会晤与《和平宣言》</td><td data-label="类型">当日</td><td data-label="板块">当代·史纲</td><td data-label="核心考点">首次三方、四点看法、中美新定位</td></tr>
+<tr><td data-label="#">3</td><td data-label="条目">老龄工作重要指示与全国老龄工作会议</td><td data-label="类型">当日</td><td data-label="板块">毛中特·民生</td><td data-label="核心考点">"四个协同"、银发经济、矛盾特殊性</td></tr>
+<tr><td data-label="#">4</td><td data-label="条目">2026年全国两会与"十五五"规划纲要</td><td data-label="类型">年度</td><td data-label="板块">毛中特·经济</td><td data-label="核心考点">4.5%—5%、20项指标、"投资于人"</td></tr>
+<tr><td data-label="#">5</td><td data-label="条目">2026年中央一号文件</td><td data-label="类型">年度</td><td data-label="板块">毛中特·三农</td><td data-label="核心考点">农业农村现代化、农业新质生产力</td></tr>
 </tbody></table>
 <hr>
 <h2>〇、本月主线：先立框架，再记细节</h2>
 <table><thead><tr>
 <th>主线</th><th>关键事实</th><th>对应板块</th>
 </tr></thead><tbody>
-<tr><td>"十五五"开局</td><td>党的二十届四中全会审议通过"十五五"规划建议，2026年为开局起步之年</td><td>毛中特</td></tr>
-<tr><td>全面从严治党</td><td>2026年10月26—29日，党的二十届五中全会在北京举行，通过《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》（建党105周年节点）</td><td>毛中特·党建</td></tr>
-<tr><td>主场外交"APEC中国年"</td><td>11月18—19日深圳APEC领导人非正式会议；中俄美三方会晤；中美双边会见</td><td>当代·外交</td></tr>
-<tr><td>民生与人口</td><td>习近平对老龄工作作出重要指示，全国老龄工作会议召开</td><td>毛中特·民生</td></tr>
+<tr><td data-label="主线">"十五五"开局</td><td data-label="关键事实">党的二十届四中全会审议通过"十五五"规划建议，2026年为开局起步之年</td><td data-label="对应板块">毛中特</td></tr>
+<tr><td data-label="主线">全面从严治党</td><td data-label="关键事实">2026年10月26—29日，党的二十届五中全会在北京举行，通过《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》（建党105周年节点）</td><td data-label="对应板块">毛中特·党建</td></tr>
+<tr><td data-label="主线">主场外交"APEC中国年"</td><td data-label="关键事实">11月18—19日深圳APEC领导人非正式会议；中俄美三方会晤；中美双边会见</td><td data-label="对应板块">当代·外交</td></tr>
+<tr><td data-label="主线">民生与人口</td><td data-label="关键事实">习近平对老龄工作作出重要指示，全国老龄工作会议召开</td><td data-label="对应板块">毛中特·民生</td></tr>
 </tbody></table>
 <p><strong>记忆口诀</strong>：十五五开局、五中全会治党、APEC主场、老龄民生。</p>
 <hr>
@@ -74,16 +83,16 @@ footer{color:var(--muted);font-size:12.5px;text-align:center;margin-top:26px}
 <table><thead><tr>
 <th>要素</th><th>内容</th>
 </tr></thead><tbody>
-<tr><td>时间</td><td>2026年11月18—19日（领导人非正式会议19日上午）</td></tr>
-<tr><td>地点</td><td>广东深圳·深圳国际交流中心</td></tr>
-<tr><td>主题</td><td><strong>建设亚太共同体，促进共同繁荣</strong></td></tr>
-<tr><td>讲话</td><td>习近平主持并发表题为<strong>《建设亚太共同体，续写"亚太奇迹"新篇章》</strong>的重要讲话</td></tr>
-<tr><td>四个"坚持"</td><td>和衷共济、开放融通、开拓创新、包容发展</td></tr>
-<tr><td>"四梁八柱"</td><td>强化<strong>经贸</strong>支柱、升级<strong>联通</strong>支柱、打造<strong>创新</strong>支柱、夯实<strong>发展</strong>支柱</td></tr>
-<tr><td>中方举措</td><td>提供<strong>2000万美元</strong>资助APEC务实合作；在深圳设立<strong>亚太共同体研究中心</strong>；在数字技术、数据跨境流动、清洁能源、中小企业发展等领域设立合作机构</td></tr>
-<tr><td>成果</td><td>通过《2026年亚太经合组织领导人宣言》，提出<strong>"深圳展望"</strong>，以及贸易、联通、创新3项成果文件</td></tr>
-<tr><td>接棒</td><td>2027年东道主<strong>越南</strong></td></tr>
-<tr><td>中国三次办会</td><td>2001年上海、2014年北京、2026年深圳</td></tr>
+<tr><td data-label="要素">时间</td><td data-label="内容">2026年11月18—19日（领导人非正式会议19日上午）</td></tr>
+<tr><td data-label="要素">地点</td><td data-label="内容">广东深圳·深圳国际交流中心</td></tr>
+<tr><td data-label="要素">主题</td><td data-label="内容"><strong>建设亚太共同体，促进共同繁荣</strong></td></tr>
+<tr><td data-label="要素">讲话</td><td data-label="内容">习近平主持并发表题为<strong>《建设亚太共同体，续写"亚太奇迹"新篇章》</strong>的重要讲话</td></tr>
+<tr><td data-label="要素">四个"坚持"</td><td data-label="内容">和衷共济、开放融通、开拓创新、包容发展</td></tr>
+<tr><td data-label="要素">"四梁八柱"</td><td data-label="内容">强化<strong>经贸</strong>支柱、升级<strong>联通</strong>支柱、打造<strong>创新</strong>支柱、夯实<strong>发展</strong>支柱</td></tr>
+<tr><td data-label="要素">中方举措</td><td data-label="内容">提供<strong>2000万美元</strong>资助APEC务实合作；在深圳设立<strong>亚太共同体研究中心</strong>；在数字技术、数据跨境流动、清洁能源、中小企业发展等领域设立合作机构</td></tr>
+<tr><td data-label="要素">成果</td><td data-label="内容">通过《2026年亚太经合组织领导人宣言》，提出<strong>"深圳展望"</strong>，以及贸易、联通、创新3项成果文件</td></tr>
+<tr><td data-label="要素">接棒</td><td data-label="内容">2027年东道主<strong>越南</strong></td></tr>
+<tr><td data-label="要素">中国三次办会</td><td data-label="内容">2001年上海、2014年北京、2026年深圳</td></tr>
 </tbody></table>
 <h3>2. 讲话骨架（背这三层）</h3>
 <ul>
@@ -236,18 +245,18 @@ footer{color:var(--muted);font-size:12.5px;text-align:center;margin-top:26px}
 <table><thead><tr>
 <th>关键词</th><th>一句话答案</th>
 </tr></thead><tbody>
-<tr><td>APEC深圳会议主题</td><td>建设亚太共同体，促进共同繁荣</td></tr>
-<tr><td>讲话标题</td><td>《建设亚太共同体，续写"亚太奇迹"新篇章》</td></tr>
-<tr><td>四梁八柱</td><td>经贸、联通、创新、发展</td></tr>
-<tr><td>深圳展望</td><td>2026年APEC领导人宣言中关于亚太共同体建设的愿景</td></tr>
-<tr><td>中俄美会晤主题</td><td>维护世界和平，促进大国关系战略稳定</td></tr>
-<tr><td>中俄美四点看法</td><td>相互尊重、和平共处、合作共赢、对话协商</td></tr>
-<tr><td>中美新定位</td><td>建设性战略稳定关系（基于尊重、公平、对等）</td></tr>
-<tr><td>老龄工作"四个协同"</td><td>政府、市场、社会、家庭</td></tr>
-<tr><td>银发经济</td><td>面向老年群体的产品与服务产业，民生与发展双重属性</td></tr>
-<tr><td>2026年GDP目标</td><td>4.5%—5%</td></tr>
-<tr><td>"十五五"起止</td><td>2026—2030年</td></tr>
-<tr><td>2026年一号文件主题</td><td>锚定农业农村现代化，扎实推进乡村全面振兴</td></tr>
+<tr><td data-label="关键词">APEC深圳会议主题</td><td data-label="一句话答案">建设亚太共同体，促进共同繁荣</td></tr>
+<tr><td data-label="关键词">讲话标题</td><td data-label="一句话答案">《建设亚太共同体，续写"亚太奇迹"新篇章》</td></tr>
+<tr><td data-label="关键词">四梁八柱</td><td data-label="一句话答案">经贸、联通、创新、发展</td></tr>
+<tr><td data-label="关键词">深圳展望</td><td data-label="一句话答案">2026年APEC领导人宣言中关于亚太共同体建设的愿景</td></tr>
+<tr><td data-label="关键词">中俄美会晤主题</td><td data-label="一句话答案">维护世界和平，促进大国关系战略稳定</td></tr>
+<tr><td data-label="关键词">中俄美四点看法</td><td data-label="一句话答案">相互尊重、和平共处、合作共赢、对话协商</td></tr>
+<tr><td data-label="关键词">中美新定位</td><td data-label="一句话答案">建设性战略稳定关系（基于尊重、公平、对等）</td></tr>
+<tr><td data-label="关键词">老龄工作"四个协同"</td><td data-label="一句话答案">政府、市场、社会、家庭</td></tr>
+<tr><td data-label="关键词">银发经济</td><td data-label="一句话答案">面向老年群体的产品与服务产业，民生与发展双重属性</td></tr>
+<tr><td data-label="关键词">2026年GDP目标</td><td data-label="一句话答案">4.5%—5%</td></tr>
+<tr><td data-label="关键词">"十五五"起止</td><td data-label="一句话答案">2026—2030年</td></tr>
+<tr><td data-label="关键词">2026年一号文件主题</td><td data-label="一句话答案">锚定农业农村现代化，扎实推进乡村全面振兴</td></tr>
 </tbody></table>
 <hr>
 <h2>九、年度重点时政池</h2>
